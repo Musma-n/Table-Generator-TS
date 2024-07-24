@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0818f1;
+}
+
+.container {
+    height: auto;
+    background-color: #417bfa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(194, 40, 40, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.name h1 {
+    margin-bottom: 20px;
+    color: #150266;
+}
+
+form input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #070707;
+    color: #08e425;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: calc(100% - 22px);
+}
+
+form button:hover {
+    background-color: #141818;
+}
+
+#answer {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .container{
+        height: auto;
+        max-width: 70%;
+    }
+    form input[type="number"],
+    form button {
+        width: calc(100% - 20px);
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #answer {
+        font-size: 18px;
+    }
+}
